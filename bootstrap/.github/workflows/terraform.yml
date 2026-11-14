@@ -49,3 +49,6 @@ jobs:
         run: terraform plan -input=false -out=tfplan
 
       
+      - name: Apply (main branch only)
+        if: github.event_name == 'push'
+        run: terraform apply -input=false tfplan
