@@ -1,0 +1,6 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+build/
+*.mp4
+Test file.txt
